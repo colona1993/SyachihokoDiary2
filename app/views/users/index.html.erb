@@ -1,0 +1,11 @@
+<h1>User一覧</h1>
+
+
+<ul>
+	<% @users.each do |user| %>
+	<p><%= link_to user.email,user_path(user.id) %></p>
+	<% end %>
+</ul>
+
+
+
